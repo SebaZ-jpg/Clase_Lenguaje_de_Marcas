@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<encuesta>
+  <opcion>Metro</opcion>
+  <opcion>Autobús (EMT)</opcion>
+  <opcion>Cercanías</opcion>
+  <opcion>Coche</opcion>
+  <opcion>Moto</opcion>
+  <opcion>Bicicleta</opcion>
+  <opcion>Patinete eléctrico</opcion>
+  <opcion>A pie</opcion>
+</encuesta>
+

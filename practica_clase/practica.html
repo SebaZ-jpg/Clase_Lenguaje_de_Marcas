@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encuesta</title>
+  <link rel="stylesheet" href="practica.css">
+</head>
+<body>
+
+  <main class="app">
+    <h1 class="title">Medio de transporte mas usado en Madrid</h1>
+
+    <div class="buttons">
+      <button id="btnCerrar" class="btn btn-danger">Cerrar encuesta</button>
+      <button id="btnReiniciar" class="btn btn-secondary">Reiniciar encuesta</button>
+    </div>
+
+    <div class="bloque-nombre">
+  <label for="nombreUsuario"><strong>Nombre:</strong></label>
+  <input type="text" id="nombreUsuario" placeholder="Escribe tu nombre">
+</div>
+
+<br><br>
+
+    <section class="info">
+      <p><strong>Nombre: </strong> <span id="ganador">0</span></p>
+      <p><strong>Contador:</strong> <span id="total">---</span></p>
+    </section>
+
+    <section class="contenedor" id="contenedorOpciones">
+      <!-- Aquí se cargan los elementos del XML -->
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <h2>Encuesta cerrada</h2>
+      <p id="modalTexto">Ganador: ---</p>
+      <button id="btnCerrarModal" class="btn btn-primary">Aceptar</button>
+    </div>
+  </div>
+
+  <script src="practica.js"></script>
+</body>
+</html>
