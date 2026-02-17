@@ -1,0 +1,35 @@
+/*
+.container {
+    display: flex;
+    row-gap: 20px;
+    column-gap: 30px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.hijo {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: white;
+    margin: 10px;
+} */
+
+.flex-container {
+    display: flex;
+    background-color: blueviolet;
+}
+
+.flex-item {
+    flex-basis: 50px;
+    height: 80px;
+    background-color: #ccc;
+    margin: 5px;
+}
+
+.especial {
+    background-color: yellow;
+    flex-basis: 150px; /* Este elemento tiene un tamaño base mayor */
+}

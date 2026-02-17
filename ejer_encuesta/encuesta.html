@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta Deportes</title>
+    <link rel="stylesheet" href="encuesta.css">
+</head>
+<body>
+
+    <h1 class="encuesta-titulo">¿Qué deporte practicas más?</h1>
+
+    <div class="encuesta-controles">
+        <button id="cerrar" class="encuesta-boton">Cerrar encuesta</button>
+        <button id="reiniciar" class="encuesta-boton">Reiniciar encuesta</button>
+    </div>
+
+    <p class="encuesta-total">Total de votos: <span id="total">0</span></p>
+    <p class="encuesta-ganador">Deporte más practicado: <span id="ganador">Cierra la encuesta para saberlo</span></p>
+
+    <div id="contenedor" class="encuesta-contenedor"></div>
+
+    <div id="modal" class="encuesta-modal">
+        <div class="encuesta-modal-contenido">
+            <h2>🏆Ganador!!!</h2>
+            <p id="modal-texto"></p>
+            <button id="cerrar-modal">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="encuesta.js"></script>
+</body>
+</html>
+

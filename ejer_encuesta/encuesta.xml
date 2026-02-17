@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<encuesta>
+    <opcion>Fútbol</opcion>
+    <opcion>Baloncesto</opcion>
+    <opcion>Tenis</opcion>
+    <opcion>Natación</opcion>
+    <opcion>Ciclismo</opcion>
+</encuesta>
