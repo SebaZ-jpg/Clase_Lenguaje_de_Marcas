@@ -1,0 +1,58 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(136, 108, 53);
+}
+
+.contenedor{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode:forwards;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        background-color: blueviolet;
+    }
+}
+
+
+.slide-in{
+    animation: slideIn 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.caja {
+    width: 150px;
+    height: 200px;
+    background-color: rgb(128, 14, 14);
+    color: white;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
