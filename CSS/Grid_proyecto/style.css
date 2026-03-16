@@ -42,16 +42,17 @@ body {
 }
 
 .nav {
-    justify-self: end;
+    justify-self: end; /* COLOCAR GRID A LA DERECHA */
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 2rem;
+
 }
 
 .nav a {
     color: white;
-    text-decoration: none;
-    transition: color 0.3s;
+    /*text-decoration: none;
+    transition: color 0.3s;*/
 }
 
 .nav a:hover {
@@ -64,30 +65,30 @@ body {
     display: grid;
     place-items: center;
     text-align: center;
-    padding: 5rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(155,123,123) 0%, rgb(156,36,36) 100%);
     color: white;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .hero button {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    background-color: white;
-    color: #667eea;
+    padding: 5px 3px;
+    font-size: 15px;
+    background-color: rgb(109, 107,6);
+    color: white;
     border: none;
-    border-radius: 30px;
     cursor: pointer;
-    transition: transform 0.3s;
+    /*border-radius: 30px;
+    transition: transform 0.3s;*/
 }
 
 .hero button:hover {
@@ -97,22 +98,21 @@ body {
 /* Proyectos Section */
 .proyectos {
     grid-area: proyectos;
-    padding: 5rem 5%;
-    background-color: #f8f9fa;
+    padding: 5px;
+    background-color: rgb(104, 53, 53);
 }
 
 .proyectos h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #2c3e50;
+    font-size: 40px;
+    color: antiquewhite;
 }
 
 /* Grid de proyectos con auto-fit */
 .proyectos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 20px;
 }
 
 .proyecto {
@@ -130,7 +130,7 @@ body {
 
 .proyecto img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -164,13 +164,14 @@ body {
 /* Sobre mí Section */
 .sobre-mi {
     grid-area: sobre-mi;
-    padding: 5rem 5%;
-    background-color: white;
+    padding: 5px;
+    background-color: rgb(124, 18, 18);
+    color: white;
 }
 
-.sobre-mi-content {
-    max-width: 800px;
-    margin: 0 auto;
+.sobre-mi-content .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .sobre-mi h2 {

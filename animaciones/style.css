@@ -1,7 +1,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: rgb(136, 108, 53);
+    background-color: rgb(53, 89, 136);
 }
 
 .contenedor{
@@ -44,6 +44,52 @@ body{
 .slide-in{
     animation: slideIn 1s ease-in;
     animation-fill-mode: forwards;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+        background-color: aqua;
+    }
+}
+
+.rotate{
+    animation: girar 1s linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rebote {
+
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-40px);
+        background-color: blueviolet;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.rebound{
+    animation: rebote 0.5s ease-in infinite;
+}
+
+.boton{
+    padding: 15px;
+    background-color: blue;
+    transition: background-color 0.3s ease, transform 0.3 ease;
+}
+
+.boton:hover{
+    background-color: aqua;
+    transform: scale(1.1);
 }
 
 .caja {
