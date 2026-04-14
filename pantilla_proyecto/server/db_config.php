@@ -1,0 +1,34 @@
+<?php
+
+define('DB_HOST', 'localhost'),
+define('DB_NAME', 'nombre_bbdd'),
+define('DB_USER', 'root'),
+define('DB_PASS', 'password_usuario_postgre'),
+
+function conectarBBDD(): PDO {
+
+//describe el tipo de base de datos que es y su host
+    $dsn = "pgsql:host=" . DB_HOST . ";port=5432;dbname=" . DB_NAME;
+
+    //comportamiento de la conexion de la BBDD
+    $opciones = [
+
+    //lanza excepciones en caso de error
+    PDO:: ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+
+    //resultado de las consultas
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ]
+
+    try {
+        $conn = new PDO($dsn, DB_USER, DB_PASS, $opciones);
+        return $conn;
+    } catch (PDOException $e){
+        http_response_code(500);
+
+        echo json_encode(['error' => 'Error al conectar a la base de datos: '. $e->getMessage()]);
+
+        exit;
+    }
+
+}
