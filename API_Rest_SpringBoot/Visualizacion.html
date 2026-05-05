@@ -1,0 +1,17 @@
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody id="tablaAlumnos">
+    </tbody>
+</table>
+
+const API_URL = "http://localhost:8080/api/alumnos";
+async function ListarAlumnos(){
+    const respuesta = await fetch(API_URL);
+    const alumnos = await respuesta.json();
+    const tabla = document.getElementById("tablaAlumnos");
+}
